@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversion Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='bgimage.jpg') }}");
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversion Results</h1>
+    <div class="container">
+        <ul>
+            {% for info in track_info %}
+                <li>Track: {{ info.track_name }}, Artist: {{ info.artist_name }} - <a href="{{ video_urls[loop.index0] }}" target="_blank">{{ video_urls[loop.index0] }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <a href="player.html">
+            <button>Open Music Player</button>
+        </a>
+    </div>
+</body>
+</html>
