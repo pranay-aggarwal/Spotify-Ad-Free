@@ -1,0 +1,89 @@
+/* Reset some default styles */
+body, html, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Spotify's background color */
+    color: #ffffff; /* Text color */
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin: 20px 0;
+    color: #1db954; /* Spotify's green color */
+  }
+  
+  form {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+    color: #1db954;
+  }
+  
+  input[type="text"] {
+    width: 60%; /* Make the search bar smaller */
+    padding: 8px; /* Reduce padding for the search bar */
+    border: 1px solid #1db954;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #168f48; /* Slightly darker green on hover */
+  }
+  
+  .container {
+    margin: 20px;
+    background-color: #333; /* Dark greyish background for texts */
+    padding: 20px; /* Add some padding inside the container */
+    border-radius: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  a {
+    color: #1db954;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #168f48; /* Slightly darker green on hover */
+  }
+  
+  /* Add more specific styles as needed for your project */
+  
