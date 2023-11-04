@@ -7,7 +7,6 @@ from youtubesearchpython import VideosSearch
 from pytube import YouTube
 
 app = Flask(__name__)
-server = app.server
 
 # Replace with your Spotify Developer credentials
 client_id = '27466a21fc434a538a1bc7ca6b59ed47'
