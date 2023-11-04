@@ -9,8 +9,8 @@ from pytube import YouTube
 app = Flask(__name__)
 
 # Replace with your Spotify Developer credentials
-client_id = '27466a21fc434a538a1bc7ca6b59ed47'
-client_secret = 'f3e29c9448ce40c9b40ac6a6dfa73380'
+client_id = ""
+client_secret = ""
 
 # Initialize the Spotipy client
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id, client_secret=client_secret))
@@ -51,7 +51,6 @@ def index():
         playlist_uri = request.form["playlist_uri"]
         output_path = "static/music"
 
-        # Call your existing functions here
         track_info = get_playlist_track_info(playlist_uri)
         video_urls = search_on_yt(track_info)
         convert_youtube_to_mp3(video_urls, output_path)
@@ -69,21 +68,15 @@ def serve_player():
 
 @app.route("/second_server", methods=["GET"])
 def second_server():
-    # Add your second server code here
-    # Directory where music files and metadata are stored
     music_directory = "static/music"
 
-    # Initialize an empty list to store music data
     music_list = []
 
-    # Loop through files in the music directory
     for filename in os.listdir(music_directory):
         if filename.endswith(".mp4"):
-            # Extract metadata from the filename
             music_name = filename.replace(".mp4", "")
             artist = ""
 
-            # Create a dictionary for the music data
             music_data = {
                 "img": "static/bg.jpg",
                 "name": music_name,
@@ -91,10 +84,8 @@ def second_server():
                 "music": f"{music_directory}/{filename}",
             }
 
-            # Append the music data to the list
             music_list.append(music_data)
 
-    # Update the JSON file with the new music data
     with open("static/music_list.json", "w") as json_file:
         json.dump(music_list, json_file, indent=4)
 
