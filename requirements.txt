@@ -1,0 +1,7 @@
+flask 
+json
+os
+spotipy
+spotipy.oauth2 
+youtubesearchpython 
+pytube
