@@ -53,7 +53,6 @@ function loadTrack(track_index){
 
 const fixedBackgroundImageURL = "static/bgimage.jpg";
 
-// Function to set the fixed background image
 function setFixedBackgroundImage() {
     document.body.style.backgroundImage = fixedBackgroundImageURL;
 }
