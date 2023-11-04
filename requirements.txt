@@ -1,4 +1,4 @@
 flask==2.2.5
 spotipy==2.23.0 
-youtubesearchpython==1.4.6
+youtubesearchpython
 pytube==11.0.0
