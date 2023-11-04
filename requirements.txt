@@ -1,7 +1,4 @@
-flask 
-json
-os
-spotipy
-spotipy.oauth2 
-youtubesearchpython 
-pytube
+flask==3.0.0
+spotipy==2.23.0 
+youtubesearchpython==1.4.6
+pytube=11.0.0
