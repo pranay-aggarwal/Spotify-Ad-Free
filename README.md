@@ -2,6 +2,12 @@
 
 Spotify Ads Free is a Python web application that allows users to convert Spotify playlist tracks into MP3 format and play them without ads. It uses the Spotify API to fetch track information from a playlist, searches for corresponding tracks on YouTube, downloads them as MP3 files, and provides a simple web-based music player for playing the converted tracks.
 
+
+
+https://github.com/pranay-aggarwal/Spotify-Ad-Free/assets/85791773/7253689e-180b-48ca-9d67-043ab1291a8b
+
+
+
 ## Features
 
 - Convert Spotify playlist tracks to MP3 format.
